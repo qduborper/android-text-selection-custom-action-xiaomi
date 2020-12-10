@@ -19,9 +19,7 @@ public class MainActivity extends AppCompatActivity {
         txt.setCustomSelectionActionModeCallback(new Callback() {
             @Override
             public boolean onPrepareActionMode(ActionMode mode, Menu menu) {
-                menu.clear();
-                menu.add(0, 1, 0, "Custom");
-                return true;
+                return false;
             }
 
             @Override
@@ -31,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+                menu.add(0, 1, 0, "Custom");
                 return true;
             }
 
